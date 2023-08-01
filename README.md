@@ -23,8 +23,6 @@ yarn add solid-simple-code-editor
 
 You need to use the editor with a third party library which provides syntax highlighting. For example, it'll look like following with [`prismjs`](https://prismjs.com):
 
-```js
-
 
 <!-- badges -->
 

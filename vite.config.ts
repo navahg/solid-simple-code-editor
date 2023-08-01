@@ -1,19 +1,17 @@
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import solidPlugin from 'vite-plugin-solid';
-import path from 'node:path';
 
 export default defineConfig({
   plugins: [
-    dts({
-      tsconfigPath: path.resolve(__dirname, 'tsconfig.build.json'),
-    }),
+    dts({ compilerOptions: { outFile: 'index.d.ts' } }),
     solidPlugin({ ssr: false }),
   ],
   build: {
     lib: {
       entry: 'src/index.tsx',
       formats: ['cjs', 'es'],
+      fileName: 'index'
     },
     minify: false,
     rollupOptions: {

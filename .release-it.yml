@@ -1,0 +1,6 @@
+git:
+  commitMessage: 'chore: release ${version}'
+npm:
+  publish: true
+github:
+  release: true

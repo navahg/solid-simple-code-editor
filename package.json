@@ -10,10 +10,10 @@
     "simple"
   ],
   "scripts": {
+    "build": "vite build",
     "lint": "eslint .",
-    "type-check": "tsc --onEmit",
-    "clean": "rimraf dist",
-    "build": "vite build"
+    "prepare": "yran build",
+    "type-check": "tsc --onEmit"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": "prettier --write"

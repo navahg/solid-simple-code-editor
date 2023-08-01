@@ -14,7 +14,7 @@
     "lint": "eslint .",
     "prepare": "yarn build",
     "release": "release-it",
-    "type-check": "tsc --onEmit"
+    "type-check": "tsc --noEmit"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": "prettier --write"

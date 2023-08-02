@@ -4,7 +4,7 @@ import solidPlugin from 'vite-plugin-solid';
 
 export default defineConfig({
   plugins: [
-    dts({ compilerOptions: { outFile: 'index.d.ts' } }),
+    dts({ compilerOptions: { outFile: 'index.d.ts' }, tsconfigPath: './tsconfig.build.json' }),
     solidPlugin({ ssr: false }),
   ],
   build: {

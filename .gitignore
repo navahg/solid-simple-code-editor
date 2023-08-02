@@ -12,3 +12,9 @@ node_modules
 
 # Built files
 dist
+.parcel-cache
+
+# Others
+.DS_Store
+.cache
+.vscode

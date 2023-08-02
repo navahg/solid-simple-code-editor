@@ -53,7 +53,7 @@ type Props = PickedDivProperties & PickedTextAreaProperties & {
 
   /**
    * Whether the editor should ignore tab key presses so that keyboard
-   * users can tab past the editor. Users can toggle this behaviour using
+   * users can tab past the editor. Users can toggle this behavior using
    * Ctrl+Shift+M (Mac) / Ctrl+M manually when this is false.
    * @default false
    */

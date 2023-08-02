@@ -11,8 +11,8 @@
 node_modules
 
 # Built files
+built
 dist
-.parcel-cache
 
 # Others
 .DS_Store

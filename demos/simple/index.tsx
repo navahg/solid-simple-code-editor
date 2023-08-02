@@ -5,8 +5,8 @@ import { render } from 'solid-js/web';
 import { Editor } from '../../src';
 
 import 'prismjs/components/prism-clike';
-import 'prismjs/components/prism-jsx';
 import 'prismjs/components/prism-markup';
+import 'prismjs/components/prism-jsx';
 
 import 'prismjs/themes/prism.min.css';
 import './styles.css';

@@ -15,6 +15,7 @@
     "prepare": "yarn build",
     "release": "release-it",
     "run:demo": "parcel demos/simple/index.html",
+    "build:demo": "",
     "type-check": "tsc --noEmit"
   },
   "lint-staged": {

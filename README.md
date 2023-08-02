@@ -77,7 +77,7 @@ The editor accepts all the props accepted by the `textarea` element. In addition
 
 ## Demo
 
-
+https://solid-simple-code-editor.vercel.app
 
 ## How it works
 

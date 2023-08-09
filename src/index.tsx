@@ -266,7 +266,7 @@ export const Editor: Component<Props> = (props) => {
     }
     
     const { selectionEnd, selectionStart, value } = event.currentTarget;
-    const tabCharacter = (local.insertSpaces ? ' ' : '\t').repeat(local.tabSize);
+    const tabCharacter = (local.insertSpaces ? ' ' : '\t').repeat(local.tabSize!);
     const hasSelection = selectionStart !== selectionEnd;
     
     if (event.key === KEYS.TAB && !local.ignoreTabKey && shouldCaptureTab) {

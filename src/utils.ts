@@ -12,7 +12,7 @@ type DefaultAdded<Source extends object, Defaults extends Partial<Source>> = {
  * @param defaults The default values
  * @returns The merged object
  */
-export const mergeDefaults = <T extends object, const D extends Partial<T>>(
+export const mergeDefaults = <T extends object, D extends Partial<T>>(
   source: T,
   defaults: D,
 ) => mergeProps(defaults, source) as DefaultAdded<T, D>;

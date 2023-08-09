@@ -4,7 +4,7 @@ import solidPlugin from 'vite-plugin-solid';
 
 export default defineConfig({
   plugins: [
-    dts({ compilerOptions: { outFile: 'index.d.ts' }, tsconfigPath: './tsconfig.build.json' }),
+    dts({ tsconfigPath: './tsconfig.build.json', rollupTypes: true }),
     solidPlugin({ ssr: false }),
   ],
   build: {
@@ -16,6 +16,9 @@ export default defineConfig({
     minify: false,
     rollupOptions: {
       external: ['solid-js', 'solid-js/web'],
+      output: {
+        exports: 'named'
+      }
     },
   },
 });

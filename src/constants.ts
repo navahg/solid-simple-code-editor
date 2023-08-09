@@ -1,4 +1,5 @@
 import { JSX } from 'solid-js/jsx-runtime';
+import { isServer } from 'solid-js/web';
 
 export const KEYS = {
   BACKSPACE: 'Backspace',
@@ -20,7 +21,7 @@ export const ENCLOSING_PAIRS = {
   '`': ['`', '`'],
 };
 
-const userAgent = window?.navigator?.userAgent ?? '';
+const userAgent = isServer ? '' : window?.navigator?.userAgent ?? '';
 
 export const isWindows = /win/i.test(userAgent);
 export const isMacLike = /(mac|iphone|ipad|ipod)/i.test(userAgent);

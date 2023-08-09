@@ -1,4 +1,9 @@
 {
+  "compilerOptions": {
+    "outDir": "dist/source",
+    "declaration": true,
+    "declarationDir": "dist/types"
+  },
   "extends": "./tsconfig.json",
   "include": ["src"]
 }
